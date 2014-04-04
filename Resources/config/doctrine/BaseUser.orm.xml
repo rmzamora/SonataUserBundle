@@ -11,7 +11,7 @@
         <!-- Profile fields -->
         <field name="dateOfBirth"  type="datetime"   column="date_of_birth"            nullable="true" />
         <field name="firstname"    type="string"     column="firstname" length="255"    nullable="true" />
-        <field name="middlename"    type="string"     column="firstname" length="255"    nullable="true" />
+        <field name="middlename"    type="string"     column="middlename" length="255"    nullable="true" />
         <field name="lastname"     type="string"     column="lastname"  length="255"    nullable="true" />
         <field name="website"      type="string"     column="website"   length="64"    nullable="true" />
         <field name="biography"    type="string"     column="biography" length="255"   nullable="true" />
