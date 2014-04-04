@@ -47,6 +47,11 @@ abstract class User extends AbstractedUser implements UserInterface
     /**
      * @var string
      */
+    protected $middlename;
+
+    /**
+     * @var string
+     */
     protected $lastname;
 
     /**
@@ -567,5 +572,21 @@ abstract class User extends AbstractedUser implements UserInterface
     public function setRealRoles(array $roles)
     {
         $this->setRoles($roles);
+    }
+
+    /**
+     * @param string $middlename
+     */
+    public function setMiddlename($middlename)
+    {
+        $this->middlename = $middlename;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMiddlename()
+    {
+        return $this->middlename;
     }
 }
