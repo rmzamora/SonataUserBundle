@@ -82,7 +82,7 @@ class GroupController
             'enabled' => "",
         );
 
-        $page     = $paramFetcher->get('page') - 1;
+        $page     = $paramFetcher->get('page');
         $limit    = $paramFetcher->get('count');
         $sort     = $paramFetcher->get('orderBy');
         $criteria = array_intersect_key($paramFetcher->all(), $supportedFilters);
@@ -188,7 +188,8 @@ class GroupController
      */
     protected function handleWriteGroup($request, $id = null)
     {
-        $group = $id ? $this->getGroup($id) : null;
+        $groupClassName = $this->groupManager->getClass();
+        $group = $id ? $this->getGroup($id) : new $groupClassName('');
 
         $form = $this->formFactory->createNamed(null, 'sonata_user_api_form_group', $group, array(
             'csrf_protection' => false
