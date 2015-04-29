@@ -9,8 +9,8 @@ Prerequisites
 
 PHP 5.3 and Symfony 2 are needed to make this bundle work; there are also some Sonata dependencies that need to be installed and configured beforehand:
 
-    - `SonataAdminBundle <http://sonata-project.org/bundles/admin>`_
-    - `SonataEasyExtendsBundle <http://sonata-project.org/bundles/easy-extends>`_
+    - `SonataAdminBundle <https://sonata-project.org/bundles/admin>`_
+    - `SonataEasyExtendsBundle <https://sonata-project.org/bundles/easy-extends>`_
 
 You will need to install those in their 2.0 branches (or master if they don't
 have a similar branch). Follow also their configuration step; you will find everything you need in their own installation chapter.
@@ -41,6 +41,7 @@ Next, be sure to enable the bundles in your and ``AppKernel.php`` file:
         return array(
             new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
+            new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             // ...
             // You have 2 options to initialize the SonataUserBundle in your AppKernel,
             // you can select which bundle SonataUserBundle extends
@@ -101,7 +102,7 @@ Add these config lines
 
         service:
             user_manager: sonata.user.orm.user_manager                      # If you're using doctrine orm (use sonata.user.mongodb.group_manager for mongodb)
-    
+
     doctrine:
 
         dbal:
@@ -332,10 +333,10 @@ classes:
 
         group:
             group_class:   Application\Sonata\UserBundle\Entity\Group
-            group_manager: sonata.user.orm.group_manager                    # If you're using doctrine orm (use sonata.user.mongodb.user_manager for mongodb)
+            group_manager: sonata.user.orm.group_manager                    # If you're using doctrine orm (use sonata.user.mongodb.group_manager for mongodb)
 
         service:
-            user_manager: sonata.user.orm.user_manager                      # If you're using doctrine orm (use sonata.user.mongodb.group_manager for mongodb)
+            user_manager: sonata.user.orm.user_manager                      # If you're using doctrine orm (use sonata.user.mongodb.user_manager for mongodb)
 
     doctrine:
 
