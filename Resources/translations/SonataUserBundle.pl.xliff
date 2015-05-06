@@ -376,7 +376,7 @@
             </trans-unit>
             <trans-unit id="gender_unknown">
                 <source>gender_unknown</source>
-                <target>płeć nieznana</target>
+                <target>nieznana</target>
             </trans-unit>
             <trans-unit id="gender_female">
                 <source>gender_female</source>
