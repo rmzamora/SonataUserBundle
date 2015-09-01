@@ -39,7 +39,7 @@
     },
     "require-dev": {
         "doctrine/orm": "*",
-        "sonata-project/seo-bundle": "~1.1",
+        "sonata-project/seo-bundle": "2.4.1.*",
         "symfony/phpunit-bridge": "~2.7|~3.0",
         "fabpot/php-cs-fixer": "~0.1|~1.0"
     },
@@ -48,7 +48,7 @@
     },
     "suggest": {
         "rmzamora/doctrine-orm-admin-bundle": "2.4.1.*",
-        "sonata-project/seo-bundle": "~1.1"
+        "sonata-project/seo-bundle": "2.4.1.*"
     },
     "autoload": {
         "psr-4": { "Sonata\\UserBundle\\": "" }
