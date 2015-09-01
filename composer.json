@@ -48,7 +48,7 @@
     },
     "suggest": {
         "rmzamora/doctrine-orm-admin-bundle": "2.4.2.*",
-        "sonata-project/seo-bundle": "~1.1"
+        "sonata-project/seo-bundle": "2.4.2.*"
     },
     "autoload": {
         "psr-4": { "Sonata\\UserBundle\\": "" }
