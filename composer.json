@@ -34,7 +34,7 @@
         "rmzamora/admin-bundle": "2.5.0.*",
         "friendsofsymfony/user-bundle": "~1.3",
         "friendsofsymfony/rest-bundle": "~1.1",
-        "jms/serializer-bundle": "~0.11|~1.0",
+        "jms/serializer-bundle": "~1.1",
         "nelmio/api-doc-bundle": "~2.4"
     },
     "require-dev": {
