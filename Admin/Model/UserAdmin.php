@@ -22,6 +22,7 @@ class UserAdmin extends Admin
 {
     protected $userManager;
 
+
     /**
      * {@inheritdoc}
      */
@@ -57,16 +58,16 @@ class UserAdmin extends Admin
     {
         $listMapper
             ->addIdentifier('username')
-            ->add('email')
-            ->add('groups')
-            ->add('enabled', null, array('editable' => true))
-            ->add('locked', null, array('editable' => true))
-            ->add('createdAt')
+            ->add('email', null, array('footable'=>array('attr'=>array('data-breakpoints'=>array('xs')))))
+            ->add('groups', null, array('footable'=>array('attr'=>array('data-breakpoints'=>array('all')))))
+            ->add('enabled', null, array('editable' => true, 'footable'=>array('attr'=>array('data-breakpoints'=>array('xs')))))
+            ->add('locked', null, array('editable' => true, 'footable'=>array('attr'=>array('data-breakpoints'=>array('xs')))))
+            ->add('createdAt', null, array('footable'=>array('attr'=>array('data-breakpoints'=>array('all')))))
         ;
 
         if ($this->isGranted('ROLE_ALLOWED_TO_SWITCH')) {
             $listMapper
-                ->add('impersonating', 'string', array('template' => 'SonataUserBundle:Admin:Field/impersonating.html.twig'))
+                ->add('impersonating', 'string', array('template' => 'SonataUserBundle:Admin:Field/impersonating.html.twig', 'footable'=>array('attr'=>array('data-breakpoints'=>array('xs', 'sm', 'md')))))
             ;
         }
     }
@@ -82,6 +83,7 @@ class UserAdmin extends Admin
             ->add('locked')
             ->add('email')
             ->add('groups')
+            ->add('createdAt', 'doctrine_orm_datetime_range', array('field_type' => 'sonata_type_datetime_range_picker'))
         ;
     }
 
