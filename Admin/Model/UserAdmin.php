@@ -22,7 +22,6 @@ class UserAdmin extends Admin
 {
     protected $userManager;
 
-
     /**
      * {@inheritdoc}
      */
