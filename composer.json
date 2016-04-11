@@ -38,7 +38,6 @@
         "doctrine/orm": "^2.2.3",
         "rmzamora/seo-bundle": "2.5.0.*",
         "symfony/phpunit-bridge": "~2.7|~3.0",
-        "fabpot/php-cs-fixer": "~0.1|~1.0",
         "friendsofsymfony/rest-bundle": "~1.1",
         "fabpot/php-cs-fixer": "~0.1|~1.0",
         "friendsofsymfony/rest-bundle": "~1.1",
